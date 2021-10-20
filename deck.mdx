@@ -1,0 +1,155 @@
+import {
+  Split,
+  SplitRight,
+  Appear,
+  Horizontal,
+  Head
+} from "mdx-deck";
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step
+} from "code-surfer";
+import { github, nightOwl } from "@code-surfer/themes";
+import { notes } from 'mdx-deck/themes'
+
+import funcImage from "./assets/images/func.png";
+import ramdaDocsImage from "./assets/images/ramda-docs.png";
+import avatar from "./assets/images/avatar.jpg";
+import thinkMemeImage from "./assets/images/think-about-it.png";
+import composeMeme1 from "./assets/images/compose-meme-1.jpeg";
+import composeMeme2 from "./assets/images/compose-meme-2.jpg";
+import composeMeme3 from "./assets/images/compose-meme-3.png";
+
+export const theme = nightOwl;
+
+# useGQL 😎
+
+### Say Bye 👋 to Redux
+
+---
+
+### Redux
+
+- Used in applications that have several features
+- features sharing same information
+
+---
+
+### useGQL
+
+- All the gqlRequest awesomeness you are familiar with 🤩
+- Compile-time and runtime type validations 🤩
+- Doesn’t need to write separate tests for each gql query
+
+---
+
+<CodeSurfer themes={[nightOwl, github]}>
+
+```ts file=./src/gql-usage.ts title="Usage"
+
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```ts file=./src/gql-example.ts title="Example"
+
+```
+
+</CodeSurfer>
+
+---
+
+## TS and IO-TS types automation for GQL
+
+---
+
+<CodeSurfer>
+
+```js file=./src/gql-server-schema.js title="Step 1" subtitle="Define graphql schema in mono-graphql"
+
+```
+
+</CodeSurfer>
+
+---
+
+### Step 2
+
+Start mono-graphql server
+
+---
+
+### Step 3
+
+`yarn gql:update`
+
+
+---
+
+<CodeSurfer>
+
+  ```js file=./src/gql-step-4.js title="Step 4" subtitle="Write required GQL query/mutation with .graphql extension"
+
+  ```
+
+</CodeSurfer>
+
+
+---
+
+### Step 5
+
+`yarn gql:compile`
+
+
+---
+
+## Done 🎉🎉
+
+---
+
+## Result
+
+---
+
+<CodeSurfer>
+
+```js file=./src/result-1.js title="GQL Query/Mutation" subtitle="Can be used to import query"
+
+```
+
+```js file=./src/result-2.js title="TS types" subtitle="Can be used for compile-time type checking"
+
+```
+
+```js file=./src/result-3.js title="IO-TS types" subtitle="Can be used for runtime type checking"
+
+```
+
+</CodeSurfer>
+
+---
+
+### useGQL + GQL Types Automation = ❤️
+
+---
+
+Wrapping Up!!
+
+---
+
+<img
+  style={{ height: "80%", width: "auto" }}
+  src={"https://c.tenor.com/MwDs1e8bAmUAAAAC/avatar-the-last-airbender.gif"}
+/>
+
+---
+
+# THANK YOU
+
+---
